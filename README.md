@@ -9,6 +9,7 @@ This is a web application developed as part of the Robotics Lab project to showc
 - [Components Developed](#components-developed)
   - [Header](#header)
   - [Carousel](#carousel)
+  - [Project](#Project-List-&-ProjectItem)
 - [Getting Started](#getting-started)
 - [Future Enhancements](#future-enhancements)
 
