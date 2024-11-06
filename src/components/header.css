@@ -1,0 +1,184 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+  padding: 25px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top:-20px;
+  max-height: 80px; /* Set a max height to constrain the overall size */
+  text-decoration: none;
+}
+
+/* Logo links */
+.logo-link {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s ease, transform 1s ease;
+  position: absolute;
+  text-decoration: none;
+  color: #00aaff;
+  top: 0;
+  left: 0;
+}
+
+.logo-link img {
+  max-width: 120px; /* Adjust to fit your design */
+  height: auto;
+}
+
+.logo-lower {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.logo-upper {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.logo-lower.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo-upper.hide {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+
+/* Hamburger and other header styles omitted for brevity */
+
+
+
+
+.header-content {
+  display: flex;
+  align-items: center;
+  padding-right: 2%;
+  gap: 20px;
+  width: calc(100% - 40px);
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+/* Change text color for white background */
+.header[style*="background-color: white"] a {
+  color: #000;
+}
+
+.header[style*="background-color: white"] .logo span {
+  color: #000; /* Logo text color change */
+}
+
+.nav-links a {
+  color: #ccc; /* Light gray color for links */
+  text-decoration: none;
+  font-weight: thin;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.nav-links a.active {
+  color: #00aaff;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #000;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 3%;
+  padding-top: 15%;
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  z-index: 10;
+}
+
+.nav-menu.open {
+  transform: translateX(0);
+}
+
+.nav-menu a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  font-style: bold;
+}
+
+/* Close button for the menu */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #ccc;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+  .hamburger {
+      display: flex;
+  }
+}
+
+.nav-links a.active {
+  color: white; /* Highlight color for the current page */
+  font-weight: bold; /* Optional for a bolder look */
+}
+
+.nav-links.light a.active {
+  color: black; /* Different highlight color for white background */
+}

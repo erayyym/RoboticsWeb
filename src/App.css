@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.content {
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.content.shifted {
+  transform: translateX(-300px); 
+}
+
+
