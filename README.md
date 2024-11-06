@@ -9,7 +9,7 @@ This is a web application developed as part of the Robotics Lab project to showc
 - [Components Developed](#components-developed)
   - [Header](#header)
   - [Carousel](#carousel)
-  - [Project](#Project-List-&-ProjectItem)
+  - [Project](#Project-List)
 - [Getting Started](#getting-started)
 - [Future Enhancements](#future-enhancements)
 
@@ -57,7 +57,7 @@ The `Carousel` component displays rotating slides with a parallax scroll effect,
 - CSS animations are applied for smooth transitions between slides, with specific classes (`next` and `prev`) to control slide-in directions.
 - The parallax effect adjusts the slide position based on the scroll offset, achieved with inline CSS `transform` styling.
 
-### Project List & ProjectItem
+### Project List
 The Project List displays a list of projects, each styled and organized for easy readability. Each project is represented by a ProjectItem component to ensure a clean, modular structure.
 
 #### Key Features
