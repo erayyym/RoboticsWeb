@@ -13,9 +13,6 @@ This is a web application developed as part of the Robotics Lab project to showc
 - [Getting Started](#getting-started)
 - [Future Enhancements](#future-enhancements)
 
-## Project Overview
-This website serves as a portfolio for the Robotics Lab, highlighting its projects, publications, team members, and opportunities. The goal was to create an engaging, user-friendly site with a clean, modern interface.
-
 ## Technologies Used
 - **React** for building a component-based UI
 - **CSS** for styling and responsive design
@@ -55,7 +52,7 @@ The `Carousel` component displays rotating slides with a parallax scroll effect,
 #### Technical Details
 - The `Carousel` component uses `useState` to track the current slide and direction.
 - CSS animations are applied for smooth transitions between slides, with specific classes (`next` and `prev`) to control slide-in directions.
-- The parallax effect adjusts the slide position based on the scroll offset, achieved with inline CSS `transform` styling.
+- The parallax effect adjusts the slide position based on the scroll offset.
 
 ### Project List
 The Project List displays a list of projects, each styled and organized for easy readability. Each project is represented by a ProjectItem component to ensure a clean, modular structure.
