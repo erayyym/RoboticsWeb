@@ -84,7 +84,7 @@ To run this project locally:
 
 ## Future Enhancements
 - **Enhanced Project List Filtering:** Add tags and filters for easier navigation through projects.
-- **Enhanced Animations:** Add more animations for transitions and button interactions.
+- **Enhanced Animations:** Find a good balance of animations for transitions and button interactions.
 - **Overall design to match vibe of our lab** 
 
 
